@@ -13,8 +13,6 @@ app.use(express.json()) //middelware allowing us tp parse incoming requests usin
 app.use("/api/auth", authRoutes)
 
 
-
-
 app.listen(PORT, ()=>{
     connectDB()
     console.log("Server is running on port", PORT)
